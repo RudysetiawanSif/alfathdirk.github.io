@@ -2,126 +2,126 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://yoursite-url/tags/linux/</loc>
+        <loc>http://alfathdirk.github.io/tags/linux/</loc>
         <lastmod>2016-06-11T23:49:42.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/JavaScript/</loc>
+        <loc>http://alfathdirk.github.io/tags/JavaScript/</loc>
         <lastmod>2016-08-04T21:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/microcontroller/</loc>
+        <loc>http://alfathdirk.github.io/tags/microcontroller/</loc>
         <lastmod>2016-08-04T21:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/raspberry-pi/</loc>
+        <loc>http://alfathdirk.github.io/tags/raspberry-pi/</loc>
         <lastmod>2016-08-04T21:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/tutorial/</loc>
+        <loc>http://alfathdirk.github.io/tags/tutorial/</loc>
         <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/hacking/</loc>
+        <loc>http://alfathdirk.github.io/tags/hacking/</loc>
         <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/social-enginering/</loc>
+        <loc>http://alfathdirk.github.io/tags/social-enginering/</loc>
         <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/android/</loc>
+        <loc>http://alfathdirk.github.io/tags/android/</loc>
         <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/javascript/</loc>
+        <loc>http://alfathdirk.github.io/tags/javascript/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/instagram/</loc>
+        <loc>http://alfathdirk.github.io/tags/instagram/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/bot/</loc>
+        <loc>http://alfathdirk.github.io/tags/bot/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/programming/</loc>
+        <loc>http://alfathdirk.github.io/tags/programming/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/nodejs/</loc>
+        <loc>http://alfathdirk.github.io/tags/nodejs/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Tutorial/</loc>
+        <loc>http://alfathdirk.github.io/tags/Tutorial/</loc>
         <lastmod>2017-04-04T05:35:45.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/LINE/</loc>
+        <loc>http://alfathdirk.github.io/tags/LINE/</loc>
         <lastmod>2017-04-04T05:35:45.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Python/</loc>
+        <loc>http://alfathdirk.github.io/tags/Python/</loc>
         <lastmod>2017-04-04T05:35:45.287Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Hexo/</loc>
+        <loc>http://alfathdirk.github.io/tags/Hexo/</loc>
         <lastmod>2017-06-08T06:24:18.601Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/Blog/</loc>
+        <loc>http://alfathdirk.github.io/tags/Blog/</loc>
         <lastmod>2017-06-08T06:24:18.601Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
