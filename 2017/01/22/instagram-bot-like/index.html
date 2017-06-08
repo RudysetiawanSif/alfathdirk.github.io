@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Instagram bot like | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Udah lama ga nge blog, ga tau mau nulis apa, yaudah akhirnya gua iseng share code untuk bot like instagramperlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK The code is for liking your timeline f">
+<meta name="keywords" content="instagram,bot,programming,javascript,nodejs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Instagram bot like">
+<meta property="og:url" content="http://yoursite.com/2017/01/22/instagram-bot-like/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Udah lama ga nge blog, ga tau mau nulis apa, yaudah akhirnya gua iseng share code untuk bot like instagramperlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK The code is for liking your timeline f">
+<meta property="og:image" content="https://alfathdirk.files.wordpress.com/2017/01/1485162130401.jpg">
+<meta property="og:updated_time" content="2017-04-03T13:53:55.937Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Instagram bot like">
+<meta name="twitter:description" content="Udah lama ga nge blog, ga tau mau nulis apa, yaudah akhirnya gua iseng share code untuk bot like instagramperlu diketahui CODE INI BUKAN BUAT DAPETIN LIKE BANYAK The code is for liking your timeline f">
+<meta name="twitter:image" content="https://alfathdirk.files.wordpress.com/2017/01/1485162130401.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-instagram-bot-like" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/22/instagram-bot-like/" class="article-date">
+  <time datetime="2017-01-22T12:53:06.000Z" itemprop="datePublished">2017-01-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Instagram bot like
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Udah lama ga nge blog, ga tau mau nulis apa, yaudah akhirnya gua iseng share code untuk bot like instagram<br>perlu diketahui <code>CODE INI BUKAN BUAT DAPETIN LIKE BANYAK</code> The code is for liking your timeline friends photo/video automatically</p>
+<p>this code is not using an API, it’s using wget and curl and you need cookies browser for get any data information you have</p>
+<p>PC only..</p>
+<a id="more"></a>
+<h3 id="1-Install-NodeJs-disini-cari-Disini"><a href="#1-Install-NodeJs-disini-cari-Disini" class="headerlink" title="1. Install NodeJs , disini cari Disini"></a>1. Install NodeJs , disini cari <a href="http://lmgtfy.com/?q=install+nodejs" target="_blank" rel="external">Disini</a></h3><p>Setelah install nodejs pastikan saat ketik <code>node</code> di cmd/command prompt keluar tanda<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; node -v</div><div class="line">v7.x.x</div></pre></td></tr></table></figure></p>
+<h3 id="2-Cari-Session-cookie-nya"><a href="#2-Cari-Session-cookie-nya" class="headerlink" title="2. Cari Session cookie nya"></a>2. Cari Session cookie nya</h3><ol>
+<li>Buka <a href="https://instagram.com" target="_blank" rel="external">https://instagram.com</a> pake google chrome</li>
+<li>klik kanan pilih <code>inspect element</code></li>
+<li>cari tab <code>network</code> kemudian refresh lagi page nya sampe data www.instagram.com ke load dan Copy semua isinya cookie itu ke dalam file like.js</li>
+</ol>
+<p>ini contoh nya<br><img src="https://alfathdirk.files.wordpress.com/2017/01/1485162130401.jpg" class="[class imeg]" title="[title text [alt text]]"></p>
+<h3 id="3-Like-js"><a href="#3-Like-js" class="headerlink" title="3. Like.js"></a>3. Like.js</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">//save as like.js</div><div class="line"></div><div class="line"><span class="built_in">let</span> csrf;</div><div class="line"></div><div class="line">const cookies = <span class="string">'cookie:pasteDisini'</span>; // HAPUS `pasteDisini` ganti dengan value cookie yg di step 2 pada gambar</div><div class="line"></div><div class="line"></div><div class="line">const <span class="built_in">exec</span> = require(<span class="string">'child_process'</span>).<span class="built_in">exec</span>;</div><div class="line">cookies.slice(7).split(<span class="string">';'</span>).forEach(data =&gt; &#123;</div><div class="line">	<span class="keyword">if</span> (data.trim().slice(0, 9) == <span class="string">'csrftoken'</span>) &#123;</div><div class="line">		csrf = data.trim();</div><div class="line">	&#125;</div><div class="line">&#125;)</div><div class="line">cmd = <span class="string">'wget --header="'</span> + cookies + <span class="string">'" https://instagram.com/ -qO -'</span></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">doLike</span></span>() &#123;</div><div class="line">	<span class="built_in">exec</span>(cmd, <span class="keyword">function</span>(err, so) &#123;</div><div class="line">    // console.log(so);</div><div class="line">		ind = so.split(<span class="string">'window._sharedData = '</span>)</div><div class="line">		dataScrap = ind[1].split(<span class="string">';&lt;/script&gt;'</span>)</div><div class="line">		tojson = JSON.parse(dataScrap[0])</div><div class="line">		media = tojson.entry_data.FeedPage[0].graphql.user.edge_web_feed_timeline.edges</div><div class="line">		<span class="keyword">for</span> (var i = 0; i &lt; media.length; i++) &#123;</div><div class="line">			<span class="keyword">if</span> (media[i].node.viewer_has_liked == <span class="literal">false</span>) &#123;</div><div class="line">				mid = media[i].node.id</div><div class="line">        // console.log(mid);</div><div class="line">				commandLike = <span class="string">'curl -H "user-agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" -H "origin:https://www.instagram.com" -H "referer:https://www.instagram.com/" -H "user-agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" -H "x-csrftoken:'</span> + csrf.slice(10) + <span class="string">'" -H "x-instagram-ajax:1" -H "x-requested-with:XMLHttpRequest" -H "accept:*/*" -H "accept-encoding:gzip, deflate, br" -H "accept-language:en-US,en;q=0.8,en-GB;q=0.6,id;q=0.4" -H "content-length:0" --cookie "'</span> + cookies.slice(7, cookies.length) + <span class="string">'" -X POST https://www.instagram.com/web/likes/'</span> + mid + <span class="string">'/like/'</span></div><div class="line">				<span class="built_in">exec</span>(commandLike, <span class="keyword">function</span>(err, stout) &#123;</div><div class="line">					console.log(<span class="string">'Like !'</span>)</div><div class="line">				&#125;)</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;)</div><div class="line">	setTimeout(doLike, 10000);</div><div class="line">&#125;</div><div class="line">doLike()</div></pre></td></tr></table></figure>
+<p>Jangan lupa masukin cookies value nya save dengan nama <code>like.js</code><br>contoh <code>const cookies = &#39;cookie:mid=xxxxxxx&#39;;</code></p>
+<h3 id="4-Run-your-code"><a href="#4-Run-your-code" class="headerlink" title="4. Run your code"></a>4. Run your code</h3><p>masuk ke direktori like.js</p>
+<p>jalankan</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; node like.js</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/22/instagram-bot-like/" data-id="cj3o1399b000adwmpvedv0erq" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bot/">bot</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/instagram/">instagram</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/programming/">programming</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/01/23/Simple-sniffing/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Simple sniffing
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/30/Raspberry-PI-2-and-me/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Raspberry PI 2 and me</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LINE/">LINE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tutorial/">Tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bot/">bot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacking/">hacking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/instagram/">instagram</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microcontroller/">microcontroller</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/">raspberry pi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/social-enginering/">social enginering</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/LINE/" style="font-size: 10px;">LINE</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Tutorial/" style="font-size: 15px;">Tutorial</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/bot/" style="font-size: 10px;">bot</a> <a href="/tags/hacking/" style="font-size: 15px;">hacking</a> <a href="/tags/instagram/" style="font-size: 10px;">instagram</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/microcontroller/" style="font-size: 10px;">microcontroller</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/raspberry-pi/" style="font-size: 10px;">raspberry pi</a> <a href="/tags/social-enginering/" style="font-size: 10px;">social enginering</a> <a href="/tags/tutorial/" style="font-size: 15px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/08/hello-world/">Hello World and Hello Cafe BMW / BMX</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/23/Simple-sniffing/">Simple sniffing</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/22/instagram-bot-like/">Instagram bot like</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/30/Raspberry-PI-2-and-me/">Raspberry PI 2 and me</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/14/Scraping-IG-part-2/">Scraping IG ,and create BOT autolike (Part II)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

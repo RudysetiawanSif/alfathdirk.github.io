@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Scraping IG ,and create BOT autolike (Part I) | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Hai kembali lagi bersama alfath , kali ini gua mau bahas soal scrapingapa itu scraping , hmmm menurut gua scraping adalah sebuah teknik untuk mengambil content web , yang tujuan nya untuk sinkronisasi">
+<meta name="keywords" content="javascript,tutorial,hacking,linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scraping IG ,and create BOT autolike (Part I)">
+<meta property="og:url" content="http://yoursite.com/2016/06/11/Scraping-IG/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hai kembali lagi bersama alfath , kali ini gua mau bahas soal scrapingapa itu scraping , hmmm menurut gua scraping adalah sebuah teknik untuk mengambil content web , yang tujuan nya untuk sinkronisasi">
+<meta property="og:image" content="https://alfathdirk.files.wordpress.com/2016/06/screen-shot-2016-06-11-at-23-38-39.png">
+<meta property="og:updated_time" content="2016-06-11T23:49:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Scraping IG ,and create BOT autolike (Part I)">
+<meta name="twitter:description" content="Hai kembali lagi bersama alfath , kali ini gua mau bahas soal scrapingapa itu scraping , hmmm menurut gua scraping adalah sebuah teknik untuk mengambil content web , yang tujuan nya untuk sinkronisasi">
+<meta name="twitter:image" content="https://alfathdirk.files.wordpress.com/2016/06/screen-shot-2016-06-11-at-23-38-39.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Scraping-IG" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/11/Scraping-IG/" class="article-date">
+  <time datetime="2016-06-11T16:07:13.000Z" itemprop="datePublished">2016-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Scraping IG ,and create BOT autolike (Part I)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Hai kembali lagi bersama alfath , kali ini gua mau bahas soal scraping<br>apa itu scraping , hmmm menurut gua scraping adalah sebuah teknik untuk mengambil content web , yang tujuan nya untuk sinkronisasi data, cari info dan bnyk lg..</p>
+<p>kali ini case yg mau gua bahas adalah scraping instagram feed(timeline) and bot like yg ada di ig gua </p>
+<p>1.Pakai Curl</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -s https://instagram.com/alfathdirk</div></pre></td></tr></table></figure>
+<p>ternyata curl ini ga bisa buat ngambil content instagram, i dunno seperti nya instagram udah di program untuk ambil content via curl itu dilarang !! <em> tapi yg lain belum tentu </em> :)</p>
+<p>lanjut<br><a id="more"></a><br>akhirnya gua coba pake wget , yaa wget hampir punya behavior yg sama seperti curl<br>2.Pake Wget</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget https://instagram.com/alfathdirk -qO -</div></pre></td></tr></table></figure>
+<p>and then keluar deh outputnya banyak bgt tinggal kita parsing data nya kedalam bentuk json<br>Output tersebut bentuk nya html tag dan dibawah ini ada code yg udah gua buat untuk parsing kedalam bentuk object/json</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line">// save as x.js</div><div class="line">var <span class="built_in">exec</span> = require(<span class="string">'child_process'</span>).<span class="built_in">exec</span></div><div class="line">var usernameIG = <span class="string">'alfathdirk'</span></div><div class="line">var cmd = <span class="string">'wget https://instagram.com/'</span>+usernameIG+<span class="string">' -qO -'</span></div><div class="line"><span class="built_in">exec</span>(cmd,<span class="keyword">function</span>(si,so,e)&#123;</div><div class="line">	output = so.split(<span class="string">'window._sharedData = '</span>)</div><div class="line">	<span class="keyword">if</span>(output.length &gt; 1)&#123;</div><div class="line">		dataScrap = output[1].split(<span class="string">';&lt;/script&gt;'</span>)</div><div class="line"></div><div class="line">		tojson = JSON.parse(dataScrap[0])</div><div class="line">		userProfile = tojson.entry_data.ProfilePage[0].user</div><div class="line"></div><div class="line">		follower = userProfile.followed_by.count</div><div class="line">		following = userProfile.follows.count</div><div class="line">		bio = userProfile.biography</div><div class="line">		username = userProfile.username</div><div class="line">		profilePic = userProfile.profile_pic_url</div><div class="line">		fullname = userProfile.full_name</div><div class="line">		name = fullname || username</div><div class="line"></div><div class="line">		media = userProfile.media.nodes</div><div class="line">		console.log(name)</div><div class="line">		console.log(bio)</div><div class="line">		</div><div class="line">		console.log(<span class="string">'Follower:'</span>,follower,<span class="string">' &lt;=&gt; Following:'</span>,following)</div><div class="line">		<span class="keyword">if</span>( typeof media !== <span class="string">'undefined'</span>)&#123;</div><div class="line">			// disini gua hanya mengambil 2 foto yg terakhir</div><div class="line">			<span class="keyword">for</span> (var i = 0; i &lt; 2; i++) &#123;</div><div class="line">				console.log(media[i].thumbnail_src)</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			console.log(userProfile.profile_pic_url)</div><div class="line">			console.log(<span class="string">'- User Is Private -'</span>)</div><div class="line">		&#125;</div><div class="line">	&#125; <span class="keyword">else</span> &#123;</div><div class="line">		console.log(<span class="string">'Not Found'</span>)</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>kemudian jalankan file </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ node x.js</div></pre></td></tr></table></figure>
+<p>Taraaaaaa keluar</p>
+<img src="https://alfathdirk.files.wordpress.com/2016/06/screen-shot-2016-06-11-at-23-38-39.png" class="[class imeg]" title="[title text [alt text]]">
+<p>part 2 nanti nya gua mau bahas bikin bot like tanpa menggunakan API dari instagram nya tp menggunakan wget/curl </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/11/Scraping-IG/" data-id="cj3o139b4000ndwmpdiwy50nm" class="article-share-link">Delen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hacking/">hacking</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/linux/">linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/06/14/Scraping-IG-part-2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          Scraping IG ,and create BOT autolike (Part II)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/01/Promise-Javascript/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">Promise Javascript</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LINE/">LINE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tutorial/">Tutorial</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bot/">bot</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hacking/">hacking</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/instagram/">instagram</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/microcontroller/">microcontroller</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/programming/">programming</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry-pi/">raspberry pi</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/social-enginering/">social enginering</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tutorial/">tutorial</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/LINE/" style="font-size: 10px;">LINE</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Tutorial/" style="font-size: 15px;">Tutorial</a> <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/bot/" style="font-size: 10px;">bot</a> <a href="/tags/hacking/" style="font-size: 15px;">hacking</a> <a href="/tags/instagram/" style="font-size: 10px;">instagram</a> <a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/microcontroller/" style="font-size: 10px;">microcontroller</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/programming/" style="font-size: 10px;">programming</a> <a href="/tags/raspberry-pi/" style="font-size: 10px;">raspberry pi</a> <a href="/tags/social-enginering/" style="font-size: 10px;">social enginering</a> <a href="/tags/tutorial/" style="font-size: 15px;">tutorial</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">January 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/06/08/hello-world/">Hello World and Hello Cafe BMW / BMX</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/23/Simple-sniffing/">Simple sniffing</a>
+          </li>
+        
+          <li>
+            <a href="/2017/01/22/instagram-bot-like/">Instagram bot like</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/30/Raspberry-PI-2-and-me/">Raspberry PI 2 and me</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/14/Scraping-IG-part-2/">Scraping IG ,and create BOT autolike (Part II)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
