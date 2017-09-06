@@ -30,13 +30,6 @@
     </url>
 
     <url>
-        <loc>http://alfathdirk.github.io/tags/tutorial/</loc>
-        <lastmod>2017-01-23T16:38:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://alfathdirk.github.io/tags/hacking/</loc>
         <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -58,35 +51,14 @@
     </url>
 
     <url>
-        <loc>http://alfathdirk.github.io/tags/javascript/</loc>
-        <lastmod>2017-04-03T13:53:55.937Z</lastmod>
+        <loc>http://alfathdirk.github.io/tags/tutorial/</loc>
+        <lastmod>2017-01-23T16:38:26.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://alfathdirk.github.io/tags/instagram/</loc>
-        <lastmod>2017-04-03T13:53:55.937Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://alfathdirk.github.io/tags/bot/</loc>
-        <lastmod>2017-04-03T13:53:55.937Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://alfathdirk.github.io/tags/programming/</loc>
-        <lastmod>2017-04-03T13:53:55.937Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://alfathdirk.github.io/tags/nodejs/</loc>
         <lastmod>2017-04-03T13:53:55.937Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -123,6 +95,41 @@
     <url>
         <loc>http://alfathdirk.github.io/tags/Blog/</loc>
         <lastmod>2017-06-08T06:24:18.601Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://alfathdirk.github.io/tags/javascript/</loc>
+        <lastmod>2017-09-06T13:44:10.548Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://alfathdirk.github.io/tags/bot/</loc>
+        <lastmod>2017-09-06T13:44:10.548Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://alfathdirk.github.io/tags/programming/</loc>
+        <lastmod>2017-09-06T13:44:10.548Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://alfathdirk.github.io/tags/nodejs/</loc>
+        <lastmod>2017-09-06T13:44:10.548Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://alfathdirk.github.io/tags/line/</loc>
+        <lastmod>2017-09-06T13:44:10.548Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

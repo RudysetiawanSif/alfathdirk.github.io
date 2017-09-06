@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          Simple sniffing - AlfathDirk
+          Naver Line Bot Javascript (AlphatJS) - AlfathDirk
         
     </title>
 
-    <link rel="canonical" href="http://alfathdirk.github.io/2017/01/23/Simple-sniffing/">
+    <link rel="canonical" href="http://alfathdirk.github.io/2017/09/06/Line-BOT-Javascript/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -90,20 +90,22 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#hacking" title="hacking">hacking</a>
+                              <a class="tag" href="/tags/#javascript" title="javascript">javascript</a>
                             
-                              <a class="tag" href="/tags/#social enginering" title="social enginering">social enginering</a>
+                              <a class="tag" href="/tags/#bot" title="bot">bot</a>
                             
-                              <a class="tag" href="/tags/#android" title="android">android</a>
+                              <a class="tag" href="/tags/#programming" title="programming">programming</a>
                             
-                              <a class="tag" href="/tags/#tutorial" title="tutorial">tutorial</a>
+                              <a class="tag" href="/tags/#nodejs" title="nodejs">nodejs</a>
+                            
+                              <a class="tag" href="/tags/#line" title="line">line</a>
                             
                         </div>
-                        <h1>Simple sniffing</h1>
+                        <h1>Naver Line Bot Javascript (AlphatJS)</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Alfath Dirk on
-                            2017-01-23
+                            2017-09-06
                         </span>
                     </div>
                 
@@ -220,44 +222,30 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>kali ini gua mau kasih tutor kenalan dengan methode sniffing…<br>
-sniffing ? what’s sniffing ? okeyy gua perkenalkan dulu soal sniffing</p>
-<img src="https://alfathdirk.files.wordpress.com/2015/11/download.jpeg" class="[class imeg]" title="[title text [alt text]]">
-<p>sniffing adalah sebuah metode mengendus a.k.a KEPO dengan melihat traffic data network yg berjalan pada jaringan internet… ex: lu bisa tau apa saja aktifitas yg dilakukan sebuah gadget yg terkoneksi dengan internet … thats rite !!! you’re man in the middle attack…<br>
-Pernah ga sih lu nongkrong2 di cafe dan lu ngeliat cewek cakep ga pake celana padahal pake !! disitu lu dipastikan sange berat men … yaudah skrng klo lu lg di cafe itu coba konek ke wifi nyaa…<br>
-kita lakukan sniffing ini dengan menggunakan gadget sederhana tanpa laptop</p>
-<p>bahan2 yg lu perlukan :</p>
+                <p>sebelum nya gua pernah bahas soal bot line tasya, tapi karena sudah lama usang dan gua lebih suka js akhirnya gua coba ganti code nya dalam bentuk javascript</p>
+<p>oke langsung aja</p>
+<p>Bahan yang diperlukan adalah</p>
+<ul>
+<li>git</li>
+<li>nodejs / npm versi 8.x.x</li>
+</ul>
+<p>bisa googling untuk install diatas dan disini ga gua bahas soal install nodejs/git</p>
 <ol>
-<li>Android rooted</li>
-<li>Wifi (cafe)</li>
-<li>download fing network tools di playstore &lt;&lt; optional</li>
-<li>download wifikill.apk di xda</li>
-<li>victim target lu</li>
+<li>Download source nya dari git gua</li>
 </ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/alfathdirk/LineAlphatJS</div></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>setelah lu konek wifi nya buka fing / wifikill sama aja untuk melihat ip address/ alamat si korban<br>
-intuisi dan social enginering disini sangat lah dibutuhkan karena kita ga tau nama yg pasti karna<br>
-terlihat ada banyak ip…</p>
-<p>buka wifikill yg sudah diinstall, klik logo gambar ‘play’… proses agak lama</p>
-<img src="https://alfathdirk.files.wordpress.com/2015/11/screenshot_2015-11-24-16-24-33.png?w=705" class="[class imeg]" title="[title text [alt text]]">
-<p>oke anggap saja target kita si ip 192.168.1.116 dan lu pengen tau siapa dia<br>
-klik ip 192.168.1.116 itu, klo klik ‘grab’ … tunggu sampe terliat aktifitas si victim seperti gambar</p>
-<img src="https://alfathdirk.files.wordpress.com/2015/11/screenshot_2015-11-24-16-27-291.png?w=705" class="[class imeg]" title="[title text [alt text]]">
-<p>keliatan kan dia lagi buka instagram…hehehe<br>
-sekarang kita check instagram dia apa, hold salah satu link (userinfo) , dan redirect menuju browser<br>
-dan hasil nya seperti ini</p>
-<img src="https://alfathdirk.files.wordpress.com/2015/11/screen-shot-2015-11-24-at-4-45-41-pm.png" class="[class imeg]" title="[title text [alt text]]">
-<p>dorr !! instagram dia bernama deacintyao &lt;&lt;</p>
-<p>hmmm terus kita liat muka nyaa dan cari sekataran cafe itu yg muka nya sesuai foto… dan akhirnya gua tau orang nya…</p>
-<p>dan ga sampai segitu , gua harus tau id line nya juga… Asumsi gua biasanya nama line/instagram itu ga jauh beda, gua coba add id line nya… dan dorrr tepat !! yaa karena terpaksa yaa gua add aja cakep soalnya ahahaha</p>
-<p>oke disini gua coba mention orang nya dengan kata2 yg sangat misterius…anjasss =))<br>
-&quot; Mba dea lg pake baju item yaa di table 4 **G Coffee ? &quot;</p>
-<p>dan ga di bales gua hanya memperhatikan dia dari jauh, beliau celingak-celinguk…<br>
-yaudah gua samperin dan gua bilang “lah mba dea yaa?? boleh minta foto bareng ga?” , dan gugup nya jawaban dia “buat apa? ga buat macem2 kan? yaudah gapapa” ( sksd gua masih berfungsi ternyata) hahaha… dengan senang nya hati ini gua ngajak selfie dia bareng dan bisa line2an juga hahahahahha</p>
-<img src="https://alfathdirk.files.wordpress.com/2015/11/img_20151112_205747.jpg?w=683&h=1024" class="[class imeg]" title="[title text [alt text]]">
-<p>Oke ini cara gua kenalan dengan si dia hahaha<br>
-banyak hal yg bisa dilakukan dengan MITM attack , dengan metode ini kita bisa tau data2 yg menurut gua confident like (password / session data) … itulah (sniffing + arp spoofing + sslSplit + coffee + rokok pilter 2 batang)</p>
-<p>regards AlfathDirk</p>
+<ol start="2">
+<li>Setelah di download, Masuk ke directory lewat commandline</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> LineAlphatJS</div><div class="line">npm i</div></pre></td></tr></table></figure>
+<p>tunggu sampe proses selesai, Sesudah itu tinggal tulis</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm start</div></pre></td></tr></table></figure>
+<p>dan akan keluar barcode login seperti gambar berikut</p>
+<img src="https://alfathdirk.files.wordpress.com/2017/09/screenshot-from-2017-09-06-20-38-08.png" class="[class imeg]" title="[title text [alt text]]">
+<p>setelah login , coba ketik halo :)</p>
+<p>untuk tanya2 bisa join ke group square &gt;&gt; <a href="https://line.me/ti/g2/XPHTN3Z6J7" target="_blank" rel="external">disini</a></p>
+<p>happy coding</p>
 
 
 
@@ -265,13 +253,9 @@ banyak hal yg bisa dilakukan dengan MITM attack , dengan metode ini kita bisa ta
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2017/03/18/hexo-theme-beantech/" data-toggle="tooltip" data-placement="top" title="[Hexo] Theme BeanTech">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/2017/01/22/instagram-bot-like/" data-toggle="tooltip" data-placement="top" title="Instagram bot like">Next Post &rarr;</a>
+                            <a href="/2017/06/08/hello-world/" data-toggle="tooltip" data-placement="top" title="Hello World and Hello Cafe BMW / BMX">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -310,13 +294,15 @@ banyak hal yg bisa dilakukan dengan MITM attack , dengan metode ini kita bisa ta
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#hacking" title="hacking">hacking</a>
+                          <a class="tag" href="/tags/#javascript" title="javascript">javascript</a>
                         
-                          <a class="tag" href="/tags/#social enginering" title="social enginering">social enginering</a>
+                          <a class="tag" href="/tags/#bot" title="bot">bot</a>
                         
-                          <a class="tag" href="/tags/#android" title="android">android</a>
+                          <a class="tag" href="/tags/#programming" title="programming">programming</a>
                         
-                          <a class="tag" href="/tags/#tutorial" title="tutorial">tutorial</a>
+                          <a class="tag" href="/tags/#nodejs" title="nodejs">nodejs</a>
+                        
+                          <a class="tag" href="/tags/#line" title="line">line</a>
                         
                     </div>
                 </section>
@@ -334,8 +320,8 @@ banyak hal yg bisa dilakukan dengan MITM attack , dengan metode ini kita bisa ta
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "alfathdirk";
-    var disqus_identifier = "http://alfathdirk.github.io/2017/01/23/Simple-sniffing/";
-    var disqus_url = "http://alfathdirk.github.io/2017/01/23/Simple-sniffing/";
+    var disqus_identifier = "http://alfathdirk.github.io/2017/09/06/Line-BOT-Javascript/";
+    var disqus_url = "http://alfathdirk.github.io/2017/09/06/Line-BOT-Javascript/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
